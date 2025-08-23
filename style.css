@@ -180,3 +180,24 @@ ul {
     margin-top: 20px;
    display: block;
 }
+.blogheader {
+  color: black;
+  background: bisque;
+  text-align: center;
+  font-size: 20px;
+  padding: auto;
+    margin-top: 20px;
+   display: block;
+}
+.blogimage {
+  width: 40%;
+  height: 300px;
+}
+.blogpost {
+  margin: 30px auto;
+  max-width: 700px;
+}
+.blogpost h3 {
+  font-size: 24px;
+ text-align: center;
+}
