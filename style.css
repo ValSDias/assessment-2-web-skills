@@ -75,6 +75,7 @@ footer {
 }
 .aboutimage {
     text-align: center;
+    margin-top: 20px;
 }
 .aboutimage img {
     width: 40%;
@@ -92,6 +93,7 @@ footer {
 }
 .contactimage {
     text-align: center;
+    margin-top: 20px;
 }
 
 .contactimage img {
@@ -109,11 +111,11 @@ footer {
     margin-top: 20px;
    display: block;
 }
-.contact-section {
+.contactsection {
   text-align: center;
   margin: 40px 0;
 }
-.contact-btn {
+.contactbtn {
   display: inline-block;
   padding: 12px 24px;
   margin: 10px;
@@ -147,4 +149,34 @@ footer {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  text-align: left;
+  padding: 0;
+  display: inline-block;
+}
+.servicessection {
+  text-align: center;
+}
+.servicesimage img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.servicesimage {
+    text-align: center;
+    margin-top: 20px;
+}
+.servicesheader {
+  color: black;
+  background: bisque;
+  text-align: center;
+  font-size: 20px;
+  padding: auto;
+    margin-top: 20px;
+   display: block;
 }
