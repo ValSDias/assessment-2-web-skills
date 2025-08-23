@@ -18,31 +18,46 @@ function goservices() {
   window.location.href = "services.html";
 }
 
-function showAll() {
-  let items = document.querySelectorAll('.gallery-item');
-  items.forEach(item => {
-    item.style.display = 'block';
+document.querySelector("button[onclick=\"filterGallery('all')\"]")
+  .addEventListener("click", function () {
+    let items = document.querySelectorAll(".galleryitem");
+    items.forEach(item => {
+      if (true) {   // always true → show everything
+        item.style.display = "block";
+      }
+    });
   });
-}
 
-function showCommercial() {
-  let items = document.querySelectorAll('.gallery-item');
-  items.forEach(item => {
-    if (item.classList.contains('commercial')) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
+document.querySelector("button[onclick=\"filterGallery('commercial')\"]")
+  .addEventListener("click", function () {
+    let items = document.querySelectorAll(".galleryitem");
+    items.forEach(item => {
+      if (item.classList.contains("commercial")) {
+        item.style.display = "block";
+      }
+      if (!item.classList.contains("commercial")) {
+        item.style.display = "none";
+      }
+    });
   });
-}
 
-function showHome() {
-  let items = document.querySelectorAll('.gallery-item');
-  items.forEach(item => {
-    if (item.classList.contains('home')) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
+document.querySelector("button[onclick=\"filterGallery('home')\"]")
+  .addEventListener("click", function () {
+    let items = document.querySelectorAll(".galleryitem");
+    items.forEach(item => {
+      if (item.classList.contains("home")) {
+        item.style.display = "block";
+      }
+      if (!item.classList.contains("home")) {
+        item.style.display = "none";
+      }
+    });
   });
-}
+  document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("contactForm");
+
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Thank you! Your message has been submitted.");
+      });
+    });
