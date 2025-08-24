@@ -1,22 +1,3 @@
-function goHome() {
-  window.location.href = "home.html";
-}
-
-function goAbout() {
-  window.location.href = "about.html";
-}
-
-function goContact() {
-  window.location.href = "contact.html";
-}
-
-function goBlog() {
-  window.location.href = "blog.html";
-}
-
-function goservices() {
-  window.location.href = "services.html";
-}
 
 document.querySelector("button[onclick=\"filterGallery('all')\"]")
   .addEventListener("click", function () {
@@ -61,3 +42,33 @@ document.querySelector("button[onclick=\"filterGallery('home')\"]")
         alert("Thank you! Your message has been submitted.");
       });
     });
+
+document.addEventListener("DOMContentLoaded", function() {
+    let testimonials = document.querySelectorAll(".testimonial, .testimonialactive");
+    let prevBtn = document.getElementById("prevBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    let current = 0;
+    
+
+    function showTestimonial(index) {
+        testimonials.forEach((t, i) => {
+            t.classList.remove("testimonialactive");
+            t.style.display = "none";
+        });
+        testimonials[index].classList.add("testimonialactive");
+        testimonials[index].style.display = "block";
+    }
+
+    showTestimonial(current);
+
+    nextBtn.addEventListener("click", function() {
+        current = (current + 1) % testimonials.length;
+        showTestimonial(current);
+    });
+
+    prevBtn.addEventListener("click", function() {
+        current = (current - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(current);
+    });
+});
