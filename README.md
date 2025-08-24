@@ -39,6 +39,7 @@ Right-click index.html → Open with Live Server.
 1. **Gallery Filtering**
    - Users can filter between All, Commercial, and Home designs.
    - Smooth animated transitions improve user experience.
+   - Users can move next or previous between testimonials.
 
 2. **Contact Form Validation**
    - Real-time validation provides instant feedback on input fields.
