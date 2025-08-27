@@ -43,3 +43,18 @@ Right-click index.html → Open with Live Server.
 
 2. **Contact Form Validation**
    - Real-time validation provides instant feedback on input fields.
+
+## Troubleshoot
+
+1. UI or Frontend Errors
+Problem: Layouts appear broken or elements do not function.
+Solution:
+    - Clear your browser cache and refresh the page.
+    - Check for console errors in the browser developer tools.
+    - Confirm that CSS, JS and images are correctly linked.
+
+2. Unexpected Behavior
+Problem: Features behave differently than expected.
+Solution:
+    - Ensure you are following the usage instructions correctly.
+    - Restart the application after clearing cache or temporary files.
